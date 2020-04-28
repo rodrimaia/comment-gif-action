@@ -24,6 +24,8 @@ async function run() {
   const gifs = await giphy().search(searchParams)
   const gif = gifs.data[0]
 
+  console.log(gif)
+
   const params = {
     owner: github.context.repo.owner,
     repo: github.context.repo.repo,

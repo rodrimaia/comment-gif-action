@@ -4350,6 +4350,7 @@ function run() {
         };
         const gifs = yield giphy_api__WEBPACK_IMPORTED_MODULE_2___default()().search(searchParams);
         const gif = gifs.data[0];
+        console.log(gif);
         const params = {
             owner: _actions_github__WEBPACK_IMPORTED_MODULE_0__.context.repo.owner,
             repo: _actions_github__WEBPACK_IMPORTED_MODULE_0__.context.repo.repo,
