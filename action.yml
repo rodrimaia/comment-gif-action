@@ -1,0 +1,17 @@
+name: 'Comment gif' 
+description: 'Automatically comment gifs in Pull Requests.'
+author: 'Rodrigo Maia <rodrigo.maia.pereira@gmail.com>'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+inputs:
+  github_token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  strategy:
+    description: 'gif resolution strategy. you can use "thumbs", "text" or "random"'
+    required: false
+    default: "thumbs"
+branding:
+  icon: 'shield'
+  color: 'purple'
